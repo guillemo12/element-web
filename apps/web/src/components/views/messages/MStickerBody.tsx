@@ -52,6 +52,7 @@ class MStickerBodyInner extends ImageBodyBaseInner {
                 height="80"
                 onMouseEnter={this.onImageEnter}
                 onMouseLeave={this.onImageLeave}
+                loading="lazy"
             />
         );
     }

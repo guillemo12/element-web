@@ -399,6 +399,7 @@ export class ImageBodyBaseInner extends React.Component<ImageBodyBaseProps, ISta
                             alt={content.body}
                             onError={this.onImageError}
                             onLoad={this.onImageLoad}
+                            loading="lazy"
                         />
                     );
                 }
@@ -449,6 +450,7 @@ export class ImageBodyBaseInner extends React.Component<ImageBodyBaseProps, ISta
                     onLoad={this.onImageLoad}
                     onMouseEnter={this.onImageEnter}
                     onMouseLeave={this.onImageLeave}
+                    loading="lazy"
                 />
             );
         }
