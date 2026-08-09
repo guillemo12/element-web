@@ -245,7 +245,6 @@ export interface Settings {
     "fontSizeDelta": IBaseSetting<number>;
     "useCustomFontSize": IBaseSetting<boolean>;
     "MessageComposerInput.suggestEmoji": IBaseSetting<boolean>;
-    "MessageComposerInput.showStickersButton": IBaseSetting<boolean>;
     "MessageComposerInput.showPollsButton": IBaseSetting<boolean>;
     "MessageComposerInput.insertTrailingColon": IBaseSetting<boolean>;
     "Notifications.alwaysShowBadgeCounts": IBaseSetting<boolean>;
@@ -671,12 +670,6 @@ export const SETTINGS: Settings = {
         displayName: _td("settings|emoji_autocomplete"),
         default: true,
         invertedSettingName: "MessageComposerInput.dontSuggestEmoji",
-    },
-    "MessageComposerInput.showStickersButton": {
-        supportedLevels: LEVELS_ACCOUNT_SETTINGS,
-        displayName: _td("settings|show_stickers_button"),
-        default: true,
-        controller: new UIFeatureController(UIFeature.Widgets, false),
     },
     "MessageComposerInput.showPollsButton": {
         supportedLevels: LEVELS_ACCOUNT_SETTINGS,
